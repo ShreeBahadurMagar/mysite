@@ -1,0 +1,178 @@
+/* margin-before is up and margin-after is the down of the page as well margin-start is the left and margin-right is the right side of the webpage .*/
+
+body{
+  color:#40514E; /*making the text color into dark grey */
+  margin:0; /* making marging all sides to 0*/
+  text-align: center;
+  font-family: 'Merriweather', serif; /*making the font family in the page*/
+}
+
+h1{
+  font-family: 'Sacramento', cursive;
+  margin: 50px auto 0 auto; /*making the margin line top right bottom and left */
+  font-size: 5.625rem;
+  
+  /* best way to represent the font size is rem which is used to ignore the em o,% etc 
+  margin-r doesn't get effected by parents but other is effected throught parent one such as px, em top: 0; /*margin top h1 as 0 */
+  color: #66BFBF;
+/*   line-height: 2; /* lining the height between the text and its hieght */ */
+  }
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color:#66BFBF;
+  font-weight: normal;
+  padding: 10px;
+}
+h3{
+ font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+
+} 
+
+/*  creating the dotted horizontal line  */
+hr{
+  border: dotted #EAF6F6 7px;
+  border-bottom: none;
+  width: 3%;
+  margin: 100px auto;
+  
+}
+
+/*Setting all the pargarpah to the double line height  */
+p{
+   line-height: 2;
+}
+a{
+  color:#11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 10px; /*making gap between the elements */
+  text-decoration: none;
+}
+
+a:hover{
+  color: #EAF6F6;
+}
+
+.pro{
+  text-decoration: underline;
+}
+
+
+.top-container{
+  background-color: #DFF6FF;
+  padding-top: 100px; /*pushes down from the parents elements */
+  position: relative; /*to make page absolute we need to use relative to it */
+} /*here css overides over div by class seslectors */
+
+.middle-container{  
+  margin: 100px 0;
+}
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+
+}
+
+/*css display properties for elements are of four types they are: 
+1. block which writes the code in blocks and covered all the line on the page. For eg: p, h1, div, ol.ul and formrs and can change the width as we like. 
+2. Inline elemetns are the elements that doesnot effects or  blocks on the elements they are: spans, images and anchors etc also there wont be effects on the width.
+3. block-inline are the elments that dispaly the both images in a same line. whereas the 
+4. none wont dispaly anything or acts as it is deleted. another for visible we use visibilty and its properties
+  */
+
+.top-cloud{
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud{
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+}
+.photo{
+  height:200px;
+  width:200px;
+}
+
+
+/*  Css float and clear concepts */
+.skill-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.program-image{
+  border-radius: 50%;
+  width: 25%;
+  float: left; /* the image will float left and its remaing will be on right */
+  margin-right: 30px;
+}
+.team-image{
+  border-radius: 50%;
+  width: 25%;
+  float: right; /* these are mostly used to wrapping the text along with the image. the image will float left and its remaing will be on right */
+  margin-left: 30px;
+}
+
+
+/* Concepts on the clear: 
+this is an opposite of the float
+we can see on the image that heading is still wrapping with the image but the text is just below as shown in the pictures.*/
+/* .skillprogram-des{ 
+  clear:left;
+}
+.skillteam-desc{
+  clear:right;
+}
+*/
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  background: #11Cdd4;
+  background-image: -webkit-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11Cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11Cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.90rem;
+  padding: 20px 0;
+}
